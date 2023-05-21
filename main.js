@@ -38,7 +38,10 @@ const validateCred = arr => {
       }
       sum += num;
     }
-    return sum % 10 === 0;
+    if (sum % 10 === 0){
+        return 'Your Card has been accepted Successfully!'
+    }else{
+        return 'Insert a valid Card Please!'
   }
   
 const findInvalidCards = nestedArr => {
